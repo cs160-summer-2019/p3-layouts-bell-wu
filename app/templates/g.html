@@ -12,9 +12,33 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
-	</head>
-	<body>
-		<!-- Your layout here -->
+    <style>
+      body {
+        padding: 0;
+      }
+      
+      .box {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: purple;
+        justify-content: flex-end;
+      }
 
+      .inside {
+        background-color: orange;
+        width: 340px;
+        margin: 20px;
+        margin-top: 0px;
+        height: 100vh; 
+        flex: 2 1 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inside">1</div>
+      <div class="inside">2</div>
+      <div class="inside">3</div>
+    </div>
 	</body>
 </html>
